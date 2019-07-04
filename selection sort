@@ -1,0 +1,13 @@
+array=[]
+n=int(input("enter the size of array:"))
+for i in range(0,n):
+    x=input()
+    array.append(x)
+print("the array is:",array)
+for i in range(0,n-1):
+    for j in range(i+1,n):
+        if(array[i]>array[j]):
+            temp=array[i]
+            array[i]=array[j]
+            array[j]=temp
+print("After sorting the array is:",array)
